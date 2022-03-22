@@ -5,12 +5,14 @@ using UnityEngine;
 public class CubeController : MonoBehaviour
 {
     private CubeSpawner cubeSpawner;
+    private CubeChecker cubeChecker;
     private MeshRenderer meshRenderer;
     private int colorIndex;
 
-    public void Setup(CubeSpawner cubeSpawner)
+    public void Setup(CubeSpawner cubeSpawner, CubeChecker cubeChecker)
     {
         this.cubeSpawner = cubeSpawner;
+        this.cubeChecker = cubeChecker;
 
         meshRenderer = GetComponent<MeshRenderer>();
         meshRenderer.material.color = this.cubeSpawner.CubeColors[0];
@@ -29,5 +31,19 @@ public class CubeController : MonoBehaviour
         }
 
         meshRenderer.material.color = cubeSpawner.CubeColors[colorIndex];
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        MeshRenderer renderer = other.GetComponent<MeshRenderer>();
+
+        if(meshRenderer.material.color == renderer.material.color)
+        {
+            cubeChecker.CorrectCount++;
+        }
+        else
+        {
+            cubeChecker.IncorrectCount++;
+        }
     }
 }
