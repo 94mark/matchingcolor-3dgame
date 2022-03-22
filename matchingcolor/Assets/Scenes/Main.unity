@@ -248,9 +248,9 @@ MonoBehaviour:
   cubeColors:
   - {r: 1, g: 0, b: 0, a: 1}
   - {r: 0, g: 0.010046005, b: 1, a: 1}
-  cubesetPrefabs: {fileID: 0}
-  spawnPoints: {fileID: 0}
-  spawnTime: 1
+  cubesetPrefabs: {fileID: 4619088009260798882, guid: a350681655bd3e74ba6fd93632793632, type: 3}
+  spawnPoints: {fileID: 1727572295}
+  spawnTime: 5
 --- !u!4 &328025622
 Transform:
   m_ObjectHideFlags: 0
@@ -430,6 +430,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1595299311
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8727582695270950499, guid: b957eef1e0ec3884f860460f9117b64b, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727582695270950499, guid: b957eef1e0ec3884f860460f9117b64b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727582695270950499, guid: b957eef1e0ec3884f860460f9117b64b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727582695270950499, guid: b957eef1e0ec3884f860460f9117b64b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727582695270950499, guid: b957eef1e0ec3884f860460f9117b64b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727582695270950499, guid: b957eef1e0ec3884f860460f9117b64b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727582695270950499, guid: b957eef1e0ec3884f860460f9117b64b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727582695270950499, guid: b957eef1e0ec3884f860460f9117b64b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727582695270950499, guid: b957eef1e0ec3884f860460f9117b64b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727582695270950499, guid: b957eef1e0ec3884f860460f9117b64b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727582695270950499, guid: b957eef1e0ec3884f860460f9117b64b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727582695270950508, guid: b957eef1e0ec3884f860460f9117b64b, type: 3}
+      propertyPath: m_Name
+      value: TouchCubeset
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b957eef1e0ec3884f860460f9117b64b, type: 3}
 --- !u!1 &1727572294
 GameObject:
   m_ObjectHideFlags: 0
