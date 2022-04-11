@@ -14,6 +14,23 @@ https://user-images.githubusercontent.com/90877724/159411053-7e9d8bb0-fb65-4dd4-
 ### 2.1 이동 큐브셋 스폰 코루틴 함수 생성
 - CubeSet 오브젝트의 자식으로 있는 9개 큐브의 MeshRenderer 컴포넌트 정보 호출
 - CubeColors의 길이(2개)만큼 for문을 돌려 9개의 큐브가 Random 색상(빨강, 파랑)으로 스폰
+```c#
+private IEnumerator SpawnCubeSet()
+    {
+        while(true)
+        {
+            GameObject clone = Instantiate(cubesetPrefabs, spawnPoints.position, Quaternion.identity);
+            MeshRenderer[] renderers = clone.GetComponentsInChildren<MeshRenderer>();
+
+            for(int i = 0; i < renderers.Length; ++i)
+            {
+                int index = Random.Range(0, CubeColors.Length);
+                renderers[i].material.color = CubeColors[index];
+            }
+
+            yield return new WaitForSeconds(spawnTime);
+        }
+```
 ### 2.2 메인 큐브셋 색상 변경
 - 색상 변경 함수 로직
 ```c#
