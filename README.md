@@ -77,4 +77,4 @@ public void GameOver()
 
         textResultScore.text = $"Score {score}";
     }
-    ```
+    
