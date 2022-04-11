@@ -30,6 +30,7 @@ private IEnumerator SpawnCubeSet()
 
             yield return new WaitForSeconds(spawnTime);
         }
+    }
 ```
 ### 2.2 메인 큐브셋 색상 변경
 - 색상 변경 함수 로직
